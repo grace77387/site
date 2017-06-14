@@ -78,7 +78,7 @@
         </div>
     </nav>
 
-    <header class="masthead">
+    <header class="masthead header">
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading">嘉瑞康有限公司</h1>
@@ -281,6 +281,18 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <!--輪播-->
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.header').backstretch([
+           "img/a.jpg"
+         , "img/b.jpg"
+         , "img/header.jpg"
+         ], {duration: 3000, fade: 750});
+      });
+    </script>
+    
     <!--GA -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
